@@ -1,6 +1,6 @@
 import requests
 #url="https://www.satan.lt/WebServices/Time.asmx"
-url = "http://www.subirporno.com/"
+url = 'http://www.soapclient.com/xml/soapresponder.wsdl'
 #?WSDL
 #headers = {'content-type': 'application/soap+xml'}
 headers = {'content-type': 'text/xml'}
@@ -13,11 +13,11 @@ body = """<?xml version="1.0" encoding="utf-8"?>
 
 response = requests.get(url,data=body,headers=headers)
 print(response.status_code)
-print response.content
+#print response.content
 
 cabeza=response.headers#['content-type']
 #print(cabeza)
 tex=response.text
-#print(tex)
+print(tex)
 #galletas=response.cookies['example_cookie_name']
 #print(galletas)
